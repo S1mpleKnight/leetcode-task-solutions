@@ -1,7 +1,5 @@
 package by.ivan.zelezinski.test.project.task13;
 
-import java.util.HashMap;
-
 public class Solution13 {
 
     private static final String[] LITERALS = {
