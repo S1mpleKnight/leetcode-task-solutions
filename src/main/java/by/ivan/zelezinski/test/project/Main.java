@@ -1,11 +1,26 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task15.Solution15;
+import by.ivan.zelezinski.test.project.task19.Solution19;
+import by.ivan.zelezinski.test.project.task19.ListNode;
 
 public class Main {
     public static void main(String[] args) {
-        Solution15 solution15 = new Solution15();
-        System.out.println(solution15.threeSum(new int[]{2,-3,0,-2,-5,-5,-4,1,2,-2,2,0,2,-4,5,5,-10}));
+        Solution19 solution19 = new Solution19();
+
+        String data = "1,2";
+        String[] split = data.split(",");
+
+        ListNode head = new ListNode(Integer.parseInt(split[0]));
+        ListNode currentNode = head;
+
+        if (split.length > 1) {
+            for (int i = 1; i < split.length; i++) {
+                currentNode.next = new ListNode(Integer.parseInt(split[i]));
+                currentNode = currentNode.next;
+            }
+        }
+
+        System.out.println(solution19.removeNthFromEnd(head, 2));
     }
 }
