@@ -1,17 +1,20 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task30.Solution30;
+import by.ivan.zelezinski.test.project.task31.Solution31;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Solution30 solution30 = new Solution30();
-
-        String s = "wordgoodgoodgoodbestword";
-        String[] words = new String[] {
-                "word","good","best","good"
+        Solution31 solution31 = new Solution31();
+        int[] array = new int[] {
+               5,1,1
         };
-
-        System.out.println(solution30.findSubstring(s, words));
+        System.out.println(Arrays.toString(array));
+        solution31.nextPermutation(array);
+        System.out.println(Arrays.toString(array));
+        solution31.nextPermutation(array);
+        System.out.println(Arrays.toString(array));
     }
 }
