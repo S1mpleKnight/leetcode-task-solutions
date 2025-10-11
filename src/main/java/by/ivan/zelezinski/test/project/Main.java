@@ -1,20 +1,12 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task31.Solution31;
-
-import java.util.Arrays;
+import by.ivan.zelezinski.test.project.task32.Solution32;
 
 public class Main {
     public static void main(String[] args) {
-        Solution31 solution31 = new Solution31();
-        int[] array = new int[] {
-               5,1,1
-        };
-        System.out.println(Arrays.toString(array));
-        solution31.nextPermutation(array);
-        System.out.println(Arrays.toString(array));
-        solution31.nextPermutation(array);
-        System.out.println(Arrays.toString(array));
+        Solution32 solution32 = new Solution32();
+        String s = "((()((())";
+        System.out.println(solution32.longestValidParentheses(s));
     }
 }
