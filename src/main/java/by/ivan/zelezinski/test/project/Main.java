@@ -1,12 +1,15 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task32.Solution32;
+import by.ivan.zelezinski.test.project.task33.Solution33;
 
 public class Main {
     public static void main(String[] args) {
-        Solution32 solution32 = new Solution32();
-        String s = "((()((())";
-        System.out.println(solution32.longestValidParentheses(s));
+        Solution33 solution33 = new Solution33();
+        int[] arr = new int[] {
+                4,5,6,7,0,1,2
+        };
+        int target = 0;
+        System.out.println(solution33.search(arr, target));
     }
 }
