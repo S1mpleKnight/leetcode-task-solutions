@@ -1,18 +1,15 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task34.Solution34;
-
-import java.util.Arrays;
+import by.ivan.zelezinski.test.project.task35.Solution35;
 
 public class Main {
     public static void main(String[] args) {
-        Solution34 solution34 = new Solution34();
-
+        Solution35 solution35 = new Solution35();
         int[] array = new int[] {
-                5,10
+                1,3,5,6,10,12,14,20,35,80
         };
-        int target = 10;
-        System.out.println(Arrays.toString(solution34.searchRange(array, target)));
+        int target = 23;
+        System.out.println(solution35.searchInsert(array, target));
     }
 }
