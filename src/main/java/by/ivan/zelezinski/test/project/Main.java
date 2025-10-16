@@ -1,17 +1,16 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task40.Solution40;
+import by.ivan.zelezinski.test.project.task41.Solution41;
 
 public class Main {
     public static void main(String[] args) {
-        Solution40 solution40 = new Solution40();
+        Solution41 solution41 = new Solution41();
+        int[] ints = {
+                1,2,2,1,3,1,0,4,0
+        };
 
-        int[] candidates = new int[] {
+        System.out.println(solution41.firstMissingPositive(ints));
 
-                10,1,2,7,6,1,5        };
-        int target = 8;
-
-        System.out.println(solution40.combinationSum2(candidates, target));
     }
 }
