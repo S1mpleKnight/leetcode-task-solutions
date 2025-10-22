@@ -1,16 +1,15 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task41.Solution41;
+import by.ivan.zelezinski.test.project.task42.Solution42;
 
 public class Main {
     public static void main(String[] args) {
-        Solution41 solution41 = new Solution41();
-        int[] ints = {
-                1,2,2,1,3,1,0,4,0
+
+        Solution42 solution42 = new Solution42();
+        int[] trap = new int[]{
+                0,1,0,2,1,0,1,3,2,1,2,1
         };
-
-        System.out.println(solution41.firstMissingPositive(ints));
-
+        System.out.println(solution42.trap(trap));
     }
 }
