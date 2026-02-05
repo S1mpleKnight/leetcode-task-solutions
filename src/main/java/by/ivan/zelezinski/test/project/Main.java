@@ -2,13 +2,13 @@ package by.ivan.zelezinski.test.project;
 
 
 import by.ivan.zelezinski.test.project.task66.Solution66;
+import by.ivan.zelezinski.test.project.task69.Solution69;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Solution66 solution66 = new Solution66();
-        int[] ints = {9, 9, 9};
-        System.out.println(Arrays.toString(solution66.plusOne(ints)));
+        Solution69 solution99 = new Solution69();
+        System.out.println(solution99.mySqrt(2147483647));
     }
 }
