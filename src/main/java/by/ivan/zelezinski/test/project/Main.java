@@ -1,12 +1,14 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task67.Solution67;
+import by.ivan.zelezinski.test.project.task66.Solution66;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
-        Solution67 solution67 = new Solution67();
-        System.out.println(solution67.addBinary("1010", "1011"));
+        Solution66 solution66 = new Solution66();
+        int[] ints = {9, 9, 9};
+        System.out.println(Arrays.toString(solution66.plusOne(ints)));
     }
 }
