@@ -3,16 +3,19 @@ package by.ivan.zelezinski.test.project;
 
 import by.ivan.zelezinski.test.project.task83.ListNode;
 import by.ivan.zelezinski.test.project.task83.Solution83;
+import by.ivan.zelezinski.test.project.task88.Solution88;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Solution83 solution83 = new Solution83();
-
-        ListNode listNode3 = new ListNode(3);
-        ListNode listNode2 = new ListNode(3, listNode3);
-        ListNode last = new ListNode(2, listNode2);
-        ListNode listNode = new ListNode(1, last);
-        ListNode listNode1 = new ListNode(1, listNode);
-        System.out.println(solution83.deleteDuplicates(listNode1));
+        int[] nums11 = new int[]{2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0};
+        int[] nums12 = new int[]{1,1,1,1,1,1,1,1,3};
+        int m = 8;
+        int n = 9;
+        Solution88 solution88 = new Solution88();
+        solution88.merge(nums11,m, nums12, n);
+        System.out.println(Arrays.toString(nums11));
+        System.out.println(Arrays.toString(nums12));
     }
 }
