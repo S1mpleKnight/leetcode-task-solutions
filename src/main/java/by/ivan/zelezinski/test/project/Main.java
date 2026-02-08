@@ -1,8 +1,6 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task83.ListNode;
-import by.ivan.zelezinski.test.project.task83.Solution83;
 import by.ivan.zelezinski.test.project.task88.Solution88;
 
 import java.util.Arrays;
