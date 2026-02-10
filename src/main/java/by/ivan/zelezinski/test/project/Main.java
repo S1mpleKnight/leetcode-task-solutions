@@ -1,19 +1,20 @@
 package by.ivan.zelezinski.test.project;
 
 
-import by.ivan.zelezinski.test.project.task88.Solution88;
-
-import java.util.Arrays;
+import by.ivan.zelezinski.test.project.task100.TreeNode;
+import by.ivan.zelezinski.test.project.task101.Solution101;
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums11 = new int[]{2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0};
-        int[] nums12 = new int[]{1,1,1,1,1,1,1,1,3};
-        int m = 8;
-        int n = 9;
-        Solution88 solution88 = new Solution88();
-        solution88.merge(nums11,m, nums12, n);
-        System.out.println(Arrays.toString(nums11));
-        System.out.println(Arrays.toString(nums12));
+        TreeNode f = new TreeNode(3);
+        TreeNode s = new TreeNode(3);
+        TreeNode t = new TreeNode(4);
+        TreeNode fo = new TreeNode(4);
+        TreeNode fi = new TreeNode(2, t, f);
+        TreeNode si = new TreeNode(2, fo, s);
+        TreeNode se = new TreeNode(1, si, fi);
+        Solution101 solution101 = new Solution101();
+        solution101.isSymmetric(se);
+
     }
 }
